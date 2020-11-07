@@ -12,7 +12,7 @@ Promise.all([
 
 let airports;
 let worldMapData;
-let visType = "";
+let visType = "force";
 let simulation;
 let projection;
 
