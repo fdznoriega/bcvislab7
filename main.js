@@ -7,12 +7,14 @@ Promise.all([
 ]).then( ([a, w]) => {
     worldMap(w);
     network(a);
-
+}).then( _ => {
+    visType = "force";
+    switchLayout();
 })
 
 let airports;
 let worldMapData;
-let visType = "force";
+let visType;
 let simulation;
 let projection;
 
